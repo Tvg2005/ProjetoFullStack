@@ -1,13 +1,22 @@
 import React, { useState } from 'react';
+import axios from 'axios';
+
+const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:3001/api';
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    // Adicione a lógica de autenticação aqui
-    alert('Login bem-sucedido!');
+    try {
+      const response = await axios.post(`${API_URL}/users/login`, { email, password });
+      alert('Login bem-sucedido!');
+      // Você pode salvar o token JWT em localStorage ou context state, conforme necessário.
+      localStorage.setItem('token', response.data.token);
+    } catch (error) {
+      alert('Login falhou: Credenciais inválidas.');
+    }
   };
 
   return (
