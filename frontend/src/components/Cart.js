@@ -3,19 +3,19 @@ import { useNavigate } from 'react-router-dom';
 import './Cart.css';
 
 function Cart({ cart, removeFromCart, updateQuantity, getTotalPrice, isOpen, setIsOpen }) {
-  const navigate = useNavigate(); // Use o hook useNavigate
+    const navigate = useNavigate(); 
 
-  const handleCheckout = () => {
-    // Limpar o carrinho e redirecionar para a página de agradecimento
-    // (Aqui pode-se adicionar lógica adicional, como enviar os detalhes da compra para o backend)
-    setIsOpen(false);
-    navigate('/thank-you');
-  };
-
+    const handleCheckout = () => {
+        setIsOpen(false);
+        navigate('/thank-you');
+      };
   return (
     <div className={`cart ${isOpen ? 'open' : ''}`}>
-      <button className="cart-toggle" onClick={() => setIsOpen(!isOpen)}>
-        {isOpen ? 'X' : 'Abrir Carrinho'}
+      <button 
+        className="cart-toggle" 
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        {isOpen ? '→' : '←'}
       </button>
       {isOpen && (
         <div className="cart-content">
@@ -42,8 +42,8 @@ function Cart({ cart, removeFromCart, updateQuantity, getTotalPrice, isOpen, set
             Total: R$ {getTotalPrice()}
           </div>
           <button className="checkout-button" onClick={handleCheckout}>
-            Prosseguir com a Compra
-          </button>
+            Finalizar compra
+        </button>
         </div>
       )}
     </div>

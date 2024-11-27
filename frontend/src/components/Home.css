@@ -1,5 +1,10 @@
 .home-container {
     display: flex;
+    transition: margin-right 0.3s ease;
+  }
+  
+  .home-container.cart-open {
+    margin-right: 300px; /* Ajuste a margem quando o carrinho estiver aberto */
   }
   
   .products {

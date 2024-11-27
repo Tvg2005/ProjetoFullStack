@@ -42,7 +42,7 @@ function Home() {
   
 
   return (
-    <div className="home-container">
+    <div className={`home-container ${isCartOpen ? 'cart-open' : ''}`}>
       <div className="products">
         {products.map(product => (
           <div key={product.id} className="product">
@@ -54,14 +54,20 @@ function Home() {
       </div>
       <Cart
         cart={cart}
-        isOpen={isCartOpen} // Passe o estado de visibilidade do carrinho como prop
+        isOpen={isCartOpen}
         removeFromCart={removeFromCart}
         updateQuantity={updateQuantity}
         getTotalPrice={getTotalPrice}
-        setIsOpen={setIsCartOpen} // Passe a função para controlar a visibilidade do carrinho como prop
+        setIsOpen={setIsCartOpen}
       />
     </div>
   );
 }
 
 export default Home;
+
+
+
+
+
+
