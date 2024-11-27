@@ -27,12 +27,19 @@ function Home() {
   };
 
   const updateQuantity = (productId, quantity) => {
+    // Tratar valores vazios ou não numéricos como zero
+    if (!quantity || isNaN(quantity)) {
+      quantity = 0;
+    }
     setCart(cart.map(item => item.id === productId ? { ...item, quantity } : item));
   };
+  
 
   const getTotalPrice = () => {
     return cart.reduce((total, item) => total + item.price * item.quantity, 0);
   };
+
+  
 
   return (
     <div className="home-container">
