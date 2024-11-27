@@ -1,17 +1,22 @@
-.container {
+.home-container {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
   }
   
-  h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+  .products {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
   }
   
-  p {
-    font-size: 1.2em;
+  .product {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    width: calc(33.333% - 32px);
+    box-sizing: border-box;
+  }
+  
+  .product h3 {
+    margin-top: 0;
   }
   
