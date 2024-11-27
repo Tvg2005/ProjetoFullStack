@@ -3,9 +3,17 @@ import './ThankYou.css';
 
 function ThankYou() {
   return (
-    <div className="thank-you-container">
-      <h2>Obrigado pela sua compra!</h2>
-      <p>Agradecemos pela sua compra. Em breve você receberá um email com os detalhes do seu pedido.</p>
+    <div className='typage'>
+    <div className="bodycontainer">
+      <header>
+        <h1>Sweet Dreams</h1>
+      </header>
+      <div className="thankyou-container">
+        <h1>Obrigado pela sua compra!</h1>
+        <p>Agradecemos pela confiança. Seu pedido foi processado com sucesso.</p>
+        <a href="/">Voltar à Página Inicial</a>
+      </div>
+    </div>
     </div>
   );
 }
