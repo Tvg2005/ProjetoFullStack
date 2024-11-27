@@ -16,7 +16,7 @@ function Cart({ cart, removeFromCart, updateQuantity, getTotalPrice, isOpen, set
                 className="cart-toggle" 
                 onClick={() => setIsOpen(!isOpen)}
             >
-                {isOpen ? '←' : '→'}
+                {isOpen ? '→' : '←'}
             </button>
             {isOpen && (
                 <div className="cart-content">
