@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffb8b6; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+header {
+    margin-top: 20px;
+  }
+  
+header h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 6em;
+    margin: 0;
+    color: #ffe5e2;
+    text-shadow: 2px 2px 4px #ff8c91;
+  }
+
+.register-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    color: white;
+    position: relative;
+    padding-bottom: 60px; 
+    background-color: #ffb8b6; 
+  }
+
+  
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: black;
+    margin: 20px 0;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.form-group {
+    margin-bottom: 15px;
+  }
+  
+input {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #ff8c91;
+    border: none;
+    color: white;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #ff666b;
+  }
+
+.linkregister{
+    color: #ff8c91;
+  }
+
+.linkregister:hover{
+    color: #ff666b;
+  }

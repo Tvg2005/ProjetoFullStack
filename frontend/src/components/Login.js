@@ -41,7 +41,7 @@ function Login() {
         <p>Não tem uma conta? <Link className='linkcadastro' to="/register">Cadastre-se</Link></p>
       </div>
       <footer> 
-        <img src="/rodape_login.jpg" alt="Rodapé" /> 
+        <img src="/rodape.jpg" alt="Rodapé" /> 
       </footer>
     </div>
   );
