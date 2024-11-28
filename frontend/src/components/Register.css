@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Parkinsans', cursive;
     background-color: #ffb8b6; 
     display: flex;
@@ -16,10 +17,12 @@ header h1 {
     font-size: 6em;
     margin: 0;
     color: #ffe5e2;
-    text-shadow: 2px 2px 4px #ff8c91;
+    text-shadow: 2px 2px 4px white;
   }
 
 .register-page {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,6 +33,7 @@ header h1 {
     position: relative;
     padding-bottom: 60px; 
     background-color: #ffb8b6; 
+    min-height: 75vh;
   }
 
   
@@ -38,7 +42,7 @@ header h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 1);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

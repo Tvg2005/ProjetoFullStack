@@ -25,7 +25,7 @@ function Login() {
   return (
     <div className="login-page">
       <header>
-        <h1>Sweet Dreams</h1>
+        <h1 className='login-titulo'>Sweet Dreams</h1>
       </header>
       <div className="login-container">
         <h2>Login</h2>
@@ -40,8 +40,8 @@ function Login() {
         </form>
         <p>Não tem uma conta? <Link className='linkcadastro' to="/register">Cadastre-se</Link></p>
       </div>
-      <footer> 
-        <img src="/rodape.jpg" alt="Rodapé" /> 
+      <footer className='login-footer'> 
+        <img className='login-img' src="/rodape.jpg" alt="Rodapé" /> 
       </footer>
     </div>
   );

@@ -6,6 +6,12 @@ const products = [
   { id: 1, name: 'Produto 1', price: 100 },
   { id: 2, name: 'Produto 2', price: 200 },
   { id: 3, name: 'Produto 3', price: 300 },
+  { id: 4, name: 'Produto 4', price: 150 },
+  { id: 5, name: 'Produto 5', price: 80 },
+  { id: 6, name: 'Produto 6', price: 30 },
+  { id: 7, name: 'Produto 7', price: 150 },
+  { id: 8, name: 'Produto 8', price: 80 },
+  { id: 9, name: 'Produto 9', price: 30 },
 ];
 
 function Home() {
@@ -39,7 +45,9 @@ function Home() {
 
   return (
     <div className={`home-container ${isCartOpen ? 'cart-open' : ''}`}>
-      
+      <header className='home-titulo'>
+        <h1>Sweet Dreams</h1>
+      </header>
       <div className="products">
         {products.map(product => (
           <div key={product.id} className="product">

@@ -37,6 +37,10 @@
   padding: 20px;
 }
 
+.cart-content h2 {
+  font-size: 3vh;
+}
+
 ul {
   list-style-type: none;
   padding: 0;

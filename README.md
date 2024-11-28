@@ -2,3 +2,5 @@
 - Documentação será descrita mais a frente
 
 - Versão 1.1
+
+- docker-compose up --build

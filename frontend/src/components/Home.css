@@ -9,10 +9,16 @@
   margin-right: 300px; /* Ajuste a margem quando o carrinho estiver aberto */
 }
 
-header {
-  width: 100%;
+.home-titulo {
   display: flex;
   justify-content: center;
+  margin: 0;
+  font-family: 'Lobster', cursive;
+  font-size: 1em;
+  margin: 0;
+  color: #ffe5e2;
+  text-shadow: 2px 2px 4px blue;
+  text-align: center;
 }
 
 .products { 
