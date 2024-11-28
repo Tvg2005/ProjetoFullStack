@@ -6,7 +6,7 @@ function ThankYou() {
     <div className='typage'>
     <div className="bodycontainer">
       <header>
-        <h1>Sweet Dreams</h1>
+        <h1 className='main-titulo'>Sweet Dreams</h1>
       </header>
       <div className="thankyou-container">
         <h1>Obrigado pela sua compra!</h1>

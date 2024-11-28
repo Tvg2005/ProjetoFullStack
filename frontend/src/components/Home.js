@@ -12,6 +12,9 @@ const products = [
   { id: 7, name: 'Produto 7', price: 150 },
   { id: 8, name: 'Produto 8', price: 80 },
   { id: 9, name: 'Produto 9', price: 30 },
+  { id: 10, name: 'Produto 10', price: 150 },
+  { id: 11, name: 'Produto 11', price: 80 },
+  { id: 12, name: 'Produto 12', price: 30 },
 ];
 
 function Home() {
@@ -45,8 +48,8 @@ function Home() {
 
   return (
     <div className={`home-container ${isCartOpen ? 'cart-open' : ''}`}>
-      <header className='home-titulo'>
-        <h1>Sweet Dreams</h1>
+      <header>
+        <h1 className='main-titulo'>Sweet Dreams</h1>
       </header>
       <div className="products">
         {products.map(product => (
@@ -65,8 +68,8 @@ function Home() {
         getTotalPrice={getTotalPrice}
         setIsOpen={setIsCartOpen}
       />
-      <footer className={`home-container ${isCartOpen ? 'cart-open' : ''}`}> 
-        <img src="/rodape.jpg" alt="Rodapé" /> 
+      <footer className={`main-footer ${isCartOpen ? 'cart-open' : ''}`}> 
+        <img className='main-footer-img' src="/rodape.jpg" alt="Rodapé" /> 
       </footer>
     </div>
   );
