@@ -10,6 +10,7 @@
   padding-bottom: 60px; 
   background-color: #ff8c91;
   gap: 5vh;
+  overflow: hidden;
 }
 
 .bodycontainer {
@@ -21,6 +22,7 @@
   align-items: center; /* Alinha verticalmente */
   height: 100vh;
   gap: 5vw; /* Espaçamento horizontal entre header e thankyou-container */
+  overflow:hidden;
 }
 
 
