@@ -3,18 +3,18 @@ import './Home.css';
 import Cart from './Cart';
 
 const products = [
-  { id: 1, name: 'Produto 1', price: 100 },
-  { id: 2, name: 'Produto 2', price: 200 },
-  { id: 3, name: 'Produto 3', price: 300 },
-  { id: 4, name: 'Produto 4', price: 150 },
-  { id: 5, name: 'Produto 5', price: 80 },
-  { id: 6, name: 'Produto 6', price: 30 },
-  { id: 7, name: 'Produto 7', price: 150 },
-  { id: 8, name: 'Produto 8', price: 80 },
-  { id: 9, name: 'Produto 9', price: 30 },
-  { id: 10, name: 'Produto 10', price: 150 },
-  { id: 11, name: 'Produto 11', price: 80 },
-  { id: 12, name: 'Produto 12', price: 30 },
+  { id: 1, name: 'Waffles com morango(x3)', price: 40, image: 'produtos/product1.jpg' },
+  { id: 2, name: 'Torta de morango com mirtilos', price: 70, image: 'produtos/product2.jpg' },
+  { id: 3, name: 'Docinhos variados(x50)', price: 80, image: 'produtos/product3.jpg' },
+  { id: 4, name: 'Torta Sweet Dream', price: 90, image: 'produtos/product4.jpg' },
+  { id: 5, name: 'Brownie com sorvete', price: 30, image: 'produtos/product5.jpg' },
+  { id: 6, name: 'Sorvete no copo com Marshamllow', price: 50, image: 'produtos/product6.jpg' },
+  { id: 7, name: 'Tartelete de frutas vermelhas(x4)', price: 60, image: 'produtos/product7.jpg' },
+  { id: 8, name: 'Brownie com M&M', price: 20, image: 'produtos/product8.jpg' },
+  { id: 9, name: 'Milk Shake de morango com M&M', price: 35, image: 'produtos/product9.jpg' },
+  { id: 10, name: 'Cheesecake de morango', price: 30, image: 'produtos/product10.jpg' },
+  { id: 11, name: 'Torta de chocolate trufado', price: 55, image: 'produtos/product11.jpg' },
+  { id: 12, name: 'Donuts variados', price: 15, image: 'produtos/product12.jpg' },
 ];
 
 function Home() {
@@ -54,6 +54,7 @@ function Home() {
       <div className="products">
         {products.map(product => (
           <div key={product.id} className="product">
+            {product.image && <img src={product.image} alt={product.name} className="product-image" />}
             <h3>{product.name}</h3>
             <p>Preço: R$ {product.price}</p>
             <button onClick={() => addToCart(product)}>Adicionar ao Carrinho</button>
@@ -68,8 +69,8 @@ function Home() {
         getTotalPrice={getTotalPrice}
         setIsOpen={setIsCartOpen}
       />
-      <footer className={`main-footer ${isCartOpen ? 'cart-open' : ''}`}> 
-        <img className='main-footer-img' src="/rodape.jpg" alt="Rodapé" /> 
+      <footer className={`main-footer ${isCartOpen ? 'cart-open' : ''}`}>
+        <img className='main-footer-img' src="/rodape.jpg" alt="Rodapé" />
       </footer>
     </div>
   );

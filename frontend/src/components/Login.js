@@ -37,6 +37,7 @@ function Login() {
   };
 
   return (
+    <div>
     <div className="main-page">
       <header>
         <h1 className="main-titulo">Sweet Dreams</h1>
@@ -71,10 +72,13 @@ function Login() {
           </Link>
         </p>
       </div>
+    </div>
+    <div className="space-container"></div> {/* Adicionar espaço de 5vh */}
       <footer className="main-footer">
         <img className="main-footer-img" src="/rodape.jpg" alt="Rodapé" />
       </footer>
     </div>
+    
   );
 }
 
