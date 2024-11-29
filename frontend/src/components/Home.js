@@ -8,7 +8,7 @@ const products = [
   { id: 3, name: 'Docinhos variados(x50)', price: 80, image: 'produtos/product3.jpg' },
   { id: 4, name: 'Torta Sweet Dream', price: 90, image: 'produtos/product4.jpg' },
   { id: 5, name: 'Brownie com sorvete', price: 30, image: 'produtos/product5.jpg' },
-  { id: 6, name: 'Sorvete no copo com Marshamllow', price: 50, image: 'produtos/product6.jpg' },
+  { id: 6, name: 'Sorvete no copo com Marshmallow', price: 50, image: 'produtos/product6.jpg' },
   { id: 7, name: 'Tartelete de frutas vermelhas(x4)', price: 60, image: 'produtos/product7.jpg' },
   { id: 8, name: 'Brownie com M&M', price: 20, image: 'produtos/product8.jpg' },
   { id: 9, name: 'Milk Shake de morango com M&M', price: 35, image: 'produtos/product9.jpg' },

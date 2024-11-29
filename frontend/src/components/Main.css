@@ -12,6 +12,7 @@
     padding-bottom: 60px; 
     background-color: #ff8c91; 
     min-height: 70vh;
+    overflow: hidden;
   }
 
 .main-titulo {
