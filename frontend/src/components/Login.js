@@ -63,7 +63,7 @@ function Login() {
               required
             />
           </div>
-          <button type="submit">Login</button>
+          <button className='button_login' type="submit">Login</button>
         </form>
         <p>
           Não tem uma conta?{' '}
