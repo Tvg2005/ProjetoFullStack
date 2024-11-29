@@ -57,7 +57,7 @@ function Home() {
             {product.image && <img src={product.image} alt={product.name} className="product-image" />}
             <h3>{product.name}</h3>
             <p>Preço: R$ {product.price}</p>
-            <button onClick={() => addToCart(product)}>Adicionar ao Carrinho</button>
+            <button className='checkout-button'onClick={() => addToCart(product)}>Adicionar ao Carrinho</button>
           </div>
         ))}
       </div>

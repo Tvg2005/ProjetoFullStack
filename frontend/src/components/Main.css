@@ -20,6 +20,27 @@ font-size: 6em;
 margin: 0;
 color: #ffe5e2;
 text-shadow: 7px 7px 10px black;
+margin-top: -20px;
+}
+
+.main-titulo {
+  animation: jump 3s ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jump {
+  0% {
+
+  }
+
+  50% {
+    transform: translate3d(0, 15px, 0)
+  }
+
+  100% {
+
+  }
+
 }
 
 .main-container {
@@ -57,5 +78,5 @@ object-fit: cover;
 
 .space-container { 
   height: 5vh; 
-  background-color: #ffffff; /* Fundo branco */ 
+  background-color: #ffffff;  
 }

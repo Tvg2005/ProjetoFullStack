@@ -36,10 +36,25 @@
   margin-bottom: 16px;
 }
 
-/* 
-.main-footer.cart-open {
-  margin-right: 150px;
-} */
+.product-image:hover {
+    animation-name: upimg;
+    animation-duration: 2.5s;
+    animation-timing-function: ease;
+}
+
+@keyframes upimg {
+  0% {
+
+  }
+
+  50% {
+    scale: 2;
+  }
+  
+  100% {
+
+  }
+}
 
 @media (max-width: 1024px) {
   .home-container.cart-open {

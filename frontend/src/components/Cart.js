@@ -34,7 +34,7 @@ function Cart({ cart, removeFromCart, updateQuantity, getTotalPrice, isOpen, set
                                         min="0"
                                         onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
                                     />
-                                    <button onClick={() => removeFromCart(item.id)}>Remover</button>
+                                    <button className='checkout-button'onClick={() => removeFromCart(item.id)}>Remover</button>
                                 </li>
                             ))}
                         </ul>
