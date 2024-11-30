@@ -38,47 +38,6 @@ Nginx: Servidor web usado para servir a aplicação em produção.
 
 MongoDB: Banco de dados NoSQL utilizado para armazenar os dados da aplicação.
 
-Estrutura de Arquivos
-A estrutura de arquivos do projeto é organizada da seguinte forma:
-
-projetoFullStack/
-│
-├── backend/
-│   ├── src/
-│   │   ├── controllers/
-│   │   ├── models/
-│   │   ├── routes/
-│   │   └── server.js
-│   ├── Dockerfile
-│   └── package.json
-│
-├── frontend/
-│   ├── public/
-│   │   ├── index.html
-│   │   ├── redvelvet.jpg
-│   │   └── rodape.jpg
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Cart.js
-│   │   │   ├── Header.js
-│   │   │   ├── Home.js
-│   │   │   ├── Login.js
-│   │   │   └── Register.js
-│   │   ├── css/
-│   │   │   ├── Cart.css
-│   │   │   ├── Home.css
-│   │   │   ├── Login.css
-│   │   │   ├── Main.css
-│   │   │   └── Register.css
-│   │   ├── App.js
-│   │   ├── index.js
-│   │   └── App.css
-│   ├── Dockerfile
-│   └── package.json
-│
-├── docker-compose.yml
-└── README.md
-
 Descrição dos Diretórios
 backend/: Contém todo o código relacionado ao servidor, incluindo os controladores, modelos, rotas e o arquivo principal server.js. Também inclui o Dockerfile para configurar o contêiner Docker do backend.
 
